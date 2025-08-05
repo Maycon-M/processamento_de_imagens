@@ -15,7 +15,7 @@ public class Histograma_Expansao_Equalizacao implements PlugIn {
 
         GenericDialog gd = new GenericDialog("Operações de Histograma");
         String[] options = {"Expansão", "Equalização"};
-        gd.addRadioButtonGroup("Escolha a operação:", options, 2, 1, "Expansão");
+        gd.addRadioButtonGroup("Escolha a operação:", options, 1, options.length, options[0]);
         gd.showDialog();
 
         if (gd.wasCanceled()) {
